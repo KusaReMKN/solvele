@@ -82,15 +82,7 @@ next:
 		if (randomLine(word, sizeof(word), fp0, nWords) == NULL)
 			err(1, "randomLine");
 		*strchr(word, '\n') = '\0';
-		(void)printf("%d -> %s\n", nWords, word);
-		if (randomLine(word, sizeof(word), fp0, nWords) == NULL)
-			err(1, "randomLine");
-		*strchr(word, '\n') = '\0';
-		(void)printf("%d -> %s\n", nWords, word);
-		if (randomLine(word, sizeof(word), fp0, nWords) == NULL)
-			err(1, "randomLine");
-		*strchr(word, '\n') = '\0';
-		(void)printf("%d -> %s\n", nWords, word);
+		(void)printf("%d\t%s\n", nWords, word);
 
 		(void)scanf("%s", check);
 		for (j = 0; j < 5; j++) {
